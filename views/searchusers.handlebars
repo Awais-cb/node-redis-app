@@ -1,0 +1,10 @@
+<h1>Search users</h1>
+{{#if error}} <h5> {{error}} </h5> {{/if}}
+{{#if del_success}} <h5> {{del_success}} </h5> {{/if}}
+<form action="/user/search" method="post">
+  <div class="form-group">
+    <label for="uid">Type user id here :</label>
+    <input type="text" class="form-control" id="uid" name='uid'>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Search">
+</form>

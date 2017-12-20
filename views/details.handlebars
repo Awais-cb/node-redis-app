@@ -1,0 +1,12 @@
+<!-- 3 brackets when we need to print otherwise 2 -->
+<h1>{{{user.first_name}}} {{{user.last_name}}} [{{{user.userid}}}]</h1>
+<ul>
+	<li class="list-group-item"><strong>Email : </strong>{{{user.email}}}</li>
+	<li class="list-group-item"><strong>Phone : </strong>{{{user.phone}}}</li>
+</ul>	
+<a href="/" class="btn btn-default pull-left">Back</a>
+<form action="/user/delete/{{user.userid}}?_method=DELETE" method="post" >
+
+	<input type="submit" name="" class="btn btn-danger pull-right" value="Delete">
+
+</form>
